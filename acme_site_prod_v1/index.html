@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Acme Demo Website</title>
+    <meta name="description" content="Acme Website">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Michael Rodriguez">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
+</head>
+<body role="document">
+<div class="hidden">
+    <script type="text/javascript">
+        <!--//--><![CDATA[//><!--
+            var images = new Array()
+            function preload() {
+                for (i = 0; i < preload.arguments.length; i++) {
+                    images[i] = new Image()
+                    images[i].src = preload.arguments[i]
+                }
+            }
+            preload(
+                "assets/img/picture1.jpg",
+                "assets/img/picture2.jpg",
+                "assets/img/picture3.jpg",
+                "assets/img/picture4.jpg",
+                "assets/img/picture5.jpg",
+                "assets/img/picture6.jpg",
+                "assets/img/picture7.jpg",
+                "assets/img/picture8.jpg",
+                "assets/img/picture9.jpg",
+                "assets/img/member1.jpg",
+                "assets/img/member2.jpg",
+                "assets/img/member3.jpg",
+                "assets/img/hero-header.jpg",
+                "assets/img/hero-mobile.jpg",
+                "assets/ico/menu-icon.svg",
+            )
+        //--><!]]>
+    </script>
+</div>
+<header role="banner" id="myHeader" class="fixedTopNav">
+    <div class="wrapperGlobal">
+        <div id="logoWrapper">
+            <a href="#" aria-label="Acme logo" class="logo">ACME</a>
+        </div>
+        <div id="menu-icon"><a href="#"></a></div>
+        <nav id="topNav" class="topNav" role="navigation" data-attribute="hidden">        
+            <ul class="nav-list">
+                <li class="nav-item current"><a href="#" id="galleryBtn" role="link">GALLERY</a></li>
+                <li class="nav-item"><a href="#" id="testimonialBtn" role="link">TESTIMONIALS</a></li>
+                <li class="nav-item"><a href="#" id="teamBtn" role="link">TEAM</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main role="main">    
+    <section id="hero">
+        <div class="heroText">
+            <h1 role="heading">WE ARE ACME</h1>
+            <p>Serving you since 1996</p>
+        </div>
+    </section>
+    <article class="wrapperGlobal">
+        <gallery id="gallerySection">
+            <h1 class="contentTitle" role="heading">GALLERY</h1>                
+            <p class="contentSubtitle">We are the company of the future, let's talk</p>            
+            <div class="row"> 
+              <div class="column">
+                <img src="assets/img/picture1.jpg" alt="acme project lenovo" role="img">
+                <img src="assets/img/picture2.jpg" alt="acme project maggi" role="img">
+                <img src="assets/img/picture3.jpg" alt="acme project macdonald" role="img">
+              </div>
+              <div class="column">
+                <img src="assets/img/picture4.jpg" alt="acme project nike" role="img">
+                <img src="assets/img/picture5.jpg" alt="acme project reebok" role="img">
+                <img src="assets/img/picture6.jpg" alt="acme project irobot" role="img">
+              </div> 
+              <div class="column">
+                <img src="assets/img/picture7.jpg" alt="acme project lantus" role="img">
+                <img src="assets/img/picture8.jpg" alt="acme project lego" role="img">
+                <img src="assets/img/picture9.jpg" alt="acme project rayban" role="img">
+              </div>
+            </div>
+        </gallery>
+        <section id="testimonialSection">        
+            <h1 class="contentTitle">TESTIMONIALS</h1>                
+            <p class="contentSubtitle">We are proud to share our best performance examples, we want to grow hand by hand.</p>    
+            <div class="contentTestimonial">
+                <h2>Excelent Service</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nibh quam, egestas eu eros molestie, eleifend viverra augue. Suspendisse potenti. Quisque commodo consectetur quam, non pretium orci viverra at. Maecenas eget iaculis nunc. </p>
+                <p>Praesent at pellentesque augue. Nunc sed ullamcorper risus. Duis tincidunt consectetur condimentum. Suspendisse pharetra purus urna, ac pretium mi elementum et. Praesent dui nibh, ullamcorper in justo sed, volutpat cursus orci. Etiam vitae sodales massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                <h4>Luis Rodriguez</h4>
+                <h5><time datetime="2019-24-01">January 24</time></h5>
+
+                <h2>Amazing staff</h2>
+                <p>Lg consectetur condimentum. Suspendisse pharetra purus urna, ac pretium mi elementum et. Praesent dui nibh, ullamcorper in justo sed, volutpat cursus orci. Etiam vitae sodales massa.</p>
+                <p>Praesent at pellentesque augue. Nunc sed ullamcorper risus. Duis tincidunt consectetur condimentum. Suspendisse pharetra purus urna, ac pretium mi elementum et. Praesent dui nibh, ullamcorper in justo sed, volutpat cursus orci. Etiam vitae sodales massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                <p>Mi elementum et. Praesent dui nibh, ullamcorper in justo sed, volutpat cursus orci. Etiam vitae sodales massa. Cum sociis natoque penatibus et magnis dis parturient montes,</p>
+                <h4>Marcos Alexander</h4>
+                <h5><time datetime="2019-25-01">January 25</time></h5>
+            </div>
+        </section>
+        <section id="teamSection">
+            <h1 class="contentTitle">OUR EXPERTS</h1>                
+            <p class="contentSubtitle">You can feel secure with our team, with more than 20 years in the industry, we understand you.</p>  
+            <div class="row">                  
+                <div class="column">
+                    <img src="assets/img/member1.jpg" alt="team member Martin" role="img">
+                    <div class="team-title">
+                        <h5>Martin Smith</h5>
+                        <span>founder &amp; ceo</span>
+                    </div>
+                </div>
+                <div class="column">                                
+                    <img src="assets/img/member2.jpg" alt="team member Franklin" role="img">                                  
+                    <div class="team-title">
+                        <h5>Franklin Harbet</h5>
+                        <span>HR Manager</span>
+                    </div>
+                </div>
+                <div class="column">                       
+                    <img src="assets/img/member3.jpg"role="img" alt="team member Linda">                                            
+                    <div class="team-title">
+                        <h5>Linda Anderson</h5>
+                        <span>Marketing Manager</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+</main>
+<footer role="contentinfo" id="footer">
+    <div class="wrapperGlobal">
+        <p> © Acme Demo Website</p>    
+    </div>
+    
+</footer>
+<a id="arrowUp"> <span class="fas fa-arrow-circle-up fa-2x arrow"></span></a>
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+<script src="src/main.js"></script>
+</body>
+</html>

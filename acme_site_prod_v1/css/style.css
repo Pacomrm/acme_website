@@ -1,0 +1,330 @@
+/*-------------------------------*/
+/* Acme Demo Website */
+/* Autor: Michael Rodriguez Marin*/
+/* Version: 1.0*/
+/* Date: 23/01/19*/
+/*-------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    color: #fff;
+    line-height: 1.4;
+    height: 100%;
+}
+body{
+    height: 100%;
+    font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;    
+    color: #c2c2c2; 
+}
+header{
+    padding: 1vh;
+    margin: 0 auto 0;
+    width: 100%;
+    height: auto;
+    background-color:#fff;
+    z-index: 99;
+    overflow:scroll
+}
+.wrapperGlobal{
+    width: 98%;
+    max-width: 1024px;
+    margin: 0 auto;
+    overflow:scroll
+}
+.arrow{
+    position: fixed;
+    bottom: 100px;
+    right: 10px;
+    cursor: pointer;
+    color:#000
+}
+#arrowUp{
+    visibility: hidden;
+}
+#gallerySection{
+    max-width: 1024px;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+}
+.contentTitle{
+    color: #000;
+    text-align:center;
+    font-style: italic;
+    font-weight: lighter;
+    position: relative;
+    margin: 7vh 0 5vh 0;
+}
+.contentTitle:after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 11vh;
+    height: 1px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    background-color: #9e9e9e;
+}
+.contentSubtitle{
+    margin: 2vh 8vh 3vh;
+    color: #000;
+    text-align:center;
+    font-style: normal;
+    font-weight: lighter;
+    position: relative;
+
+}
+#logoWrapper{
+    width: 100px;
+    padding: 2.4vh 0;
+    height: 40px;
+    color:#000;
+    font-size: 1.4em;    
+    display: inline-block;
+}
+.logo{
+    margin: 2em;
+    text-decoration: none;
+    color:#000;
+
+}
+.navOpen{
+    display:inline-block;
+}
+.fixedTopNav {
+    position: fixed;
+    top: 0;
+    width: 100%; 
+}
+.fixedTopNav + main{
+    padding-top: 4vh;
+}
+.topNav {
+    width: 90%;
+    height: 0;
+    color: #c7c7;
+    margin:0 auto;
+    background-color: #fff;
+    overflow: hidden;
+    border-top: 1px solid #9e9e9e;
+    display: none;
+}
+.topNav ul{
+    list-style-type: none;
+    text-align: right;
+}
+.topNav ul li{
+    padding: 20px 20px;
+    font-weight: 400;
+    text-align: left;
+}
+.topNav ul li:hover{
+    color: #000;
+}
+.topNav ul li a{
+    color: #9e9e9e;
+    text-decoration: none;
+}
+#menu-icon{
+    background-image: url(../assets/ico/menu-icon.svg);
+    width: 32px;
+    height: 32px;
+    float: right;
+    margin: 1.7vh 2.7vh 2vh;
+    display: inline-block;
+    box-sizing: border-box;
+}
+a:hover#menu-icon{
+    background-color: #000;
+    border-radius: 4px 4px 0 0;
+}
+main{
+    clear: both;
+    overflow: hidden;
+    margin: 3vh 0 0 0;
+    overflow:scroll
+}
+#hero{
+    background-image: url(../assets/img/hero-mobile.jpg); 
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+.heroText{
+    max-width: 80vh;
+    width: 30vh;
+    height: 11vh;
+    background-color: #333;
+    padding: 1.5vh;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    white-space: nowrap;
+    margin: 0 auto;
+    align-items: center;
+    align-self: center;
+    color: #fff;
+}
+.heroText h1{
+    font-size: 3.5vh;
+    word-wrap: normal;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+}
+.heroText p{
+    font-size: 1.8vh;
+    display: flex;
+    margin: 0 auto;
+}
+.row {
+  flex-wrap: wrap;
+  padding: 0 5vh;
+  display: flex;
+}
+.column {
+  flex: 100%;
+  min-width: 100%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+.contentTestimonial{
+margin: 6vh 8vh 6vh;
+
+}
+.contentTestimonial h2{
+margin: 8vh 0 0;
+
+}
+.contentTestimonial p{
+color: #000;
+
+}
+.team-title{
+    position: static;
+    padding: 20px 0;
+    display: inline-block;
+    letter-spacing: 2px;
+    width: 100%;
+    text-align: center;
+}
+footer{
+    padding: 40px 40px;
+    max-width: 100%;
+    width: 100%;
+    height: 100px;
+    background: #3333;
+    color:#000;
+    text-align: right;
+    
+}
+
+/*Media Queries*/
+
+@media only screen and (min-width : 600px) {
+    .column {
+        flex: 50%;
+        min-width: 50%;
+    }
+    #hero{
+        background-image: url(../assets/img/hero-header.jpg);
+        background-size: cover;
+    }
+    .contentTitle{
+        margin: 5vh 0 4vh 0;
+    }
+    .contentSubtitle{
+        margin: 1vh 8vh 3vh;
+    }
+    .contentTestimonial h2{
+        margin: 1vh 0vh 0vh;
+    }
+    .topNav ul{
+        text-align: left;
+    }
+    main{
+        margin: 2vh 0 0 0;
+    }
+
+}
+@media only screen and (min-width : 768px) {
+    header{
+        padding: 1vh;
+        width: 100%;
+    }
+    .column {
+        flex: 33%;
+        min-width: 33%;
+    }
+    #menu-icon {
+        display:none;
+    }
+    .contentTitle:after{
+        width: 11vh;
+    }
+    .topNav {
+        display: contents;
+        border: none;
+        height: 80%;
+        opacity: 1;
+        max-width: 50%;
+        max-width: 1024px;
+        float: right;
+    }
+    .topNav ul{
+        text-align: right;
+    }
+    .topNav ul li{
+        display: inline;
+        padding: 0 0;
+        font-weight: 400;
+        margin: 2vh 2vh;
+        text-align: right;
+    }
+    .topNav ul li:last-child{
+        margin: 0;
+    }
+    .heroText{
+        width: 20em;
+        height: 8em;
+        background-color: #333;
+        padding: 17px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .heroText h1{
+        font-size: 2.4em;
+        clear: both;
+    }
+    .heroText p{
+        font-size: 1.3em;
+    }
+    .contentTestimonial{
+        margin: 5vh;
+    }
+    .row {    
+        padding: 0;
+    }
+    #logoWrapper{
+        float: left;
+        padding: 0 0 0 0;
+    }
+    #teamSection .column{
+        max-height: length;
+    }
+    #gallerySection{
+        padding: 0 5vh 0;
+    }
+}
+
